@@ -51,5 +51,3 @@ This system improves transparency and accountability in donation management.
 - Payment.java
 - Report.java
 - Main.java
-Enter password for donor1: 1234
-Enter donation amount: 5000

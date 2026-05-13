@@ -14,6 +14,12 @@ public class Payment {
     }
 
     public void processPayment() {
+    	if (amount <= 0) {
+            status = "Failed";
+            System.out.println("Invalid payment amount!");
+            return;
+        }
+
         status = "Completed";
         System.out.println("Payment processed successfully.");
     }
@@ -23,4 +29,3 @@ public class Payment {
     }
 }
 
-//Verify payment not needed. 

@@ -50,9 +50,7 @@ public class Main {
                     if (donor1.login(pass1)) {
                         donor1.displayDetails();
 
-                        System.out.print("Enter donation amount: ");
-                        double amount = sc.nextDouble();
-                        sc.nextLine();
+                        double amount = validateDonation(sc);
                         System.out.println("1. Heling Hands");
                         System.out.println("2. Food for all");
                         System.out.println("3. Grean Earth");
@@ -76,9 +74,7 @@ public class Main {
                     if (donor2.login(pass2)) {
                         donor2.displayDetails();
 
-                        System.out.print("Enter donation amount: ");
-                        double amount = sc.nextDouble();
-                        sc.nextLine();
+                        double amount = validateDonation(sc);
                         System.out.println("1. Heling Hands");
                         System.out.println("2. Food for all");
                         System.out.println("3. Grean Earth");
@@ -101,10 +97,8 @@ public class Main {
 
                     if (donor3.login(pass3)) {
                         donor3.displayDetails();
-
-                        System.out.print("Enter donation amount: ");
-                        double amount = sc.nextDouble();
-                        sc.nextLine();
+                        
+                        double amount = validateDonation(sc);
                         System.out.println("1. Heling Hands");
                         System.out.println("2. Food for all");
                         System.out.println("3. Grean Earth");
@@ -128,9 +122,7 @@ public class Main {
                     if (donor4.login(pass4)) {
                         donor4.displayDetails();
 
-                        System.out.print("Enter donation amount: ");
-                        double amount = sc.nextDouble();
-                        sc.nextLine();
+                        double amount = validateDonation(sc);
                         System.out.println("1. Heling Hands");
                         System.out.println("2. Food for all");
                         System.out.println("3. Grean Earth");

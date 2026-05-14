@@ -22,8 +22,20 @@ public class Donation {
     public void recordDonation() {
         System.out.println("Donation recorded: " + amount);
     }
-
-    public boolean validateDonation() {
-        return amount > 0;
+    public static double validateDonation(Scanner sc)
+{
+    double amount;
+    while (true)
+    {
+        System.out.print("Enter donation amount: ");
+        amount = sc.nextDouble();
+        if (amount > 0)
+        {
+            break;
+        }
+        System.out.println("Invalid amount! Donation must be greater than 0.");
+    }
+    return amount;
+}
     }
 }
